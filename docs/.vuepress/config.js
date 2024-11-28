@@ -33,7 +33,8 @@ export default defineUserConfig({
         link: '/Algorithm/Divide&Conquer',
         collapsible: false,
         children: [
-          { text: '分治法', link: '/Algorithm/Divide&Conquer' }
+          { text: '分治法', link: '/Algorithm/Divide&Conquer' },
+          { text: 'Leetcode', link: '/Algorithm/Leetcode' }
         ],
       }
     ]
