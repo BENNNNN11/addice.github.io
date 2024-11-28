@@ -1,3 +1,16 @@
 import comp from "D:/datasets/addice-blogs/docs/.vuepress/.temp/pages/index.html.vue"
 const data = JSON.parse("{\"path\":\"/\",\"title\":\"Welcome!\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1732763642000,\"contributors\":[{\"name\":\"wangjiabin01\",\"email\":\"wangjiabin01@inspur.com\",\"commits\":1,\"url\":\"https://github.com/wangjiabin01\"}]},\"filePathRelative\":\"README.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
